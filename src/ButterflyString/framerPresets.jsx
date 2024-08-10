@@ -1,20 +1,19 @@
+// Define the transition for animations
 const revealTransition = {
   type: "tween",
   duration: 0.2,
   ease: [0.445, 0.05, 0.55, 0.95],
 };
 
+// Define rotation values
 const rotate3d = {
   x: 1,
   y: 0.3,
   z: 0,
   deg: 90,
 };
-export const springMedium = {
-  type: "spring",
-  stiffness: 300,
-  damping: 30,
-};
+
+// Reveal animation variant
 export const reveal = {
   variants: {
     initial: {
@@ -31,6 +30,7 @@ export const reveal = {
   },
 };
 
+// Reveal reverse animation variant
 export const revealReverse = {
   variants: {
     initial: {
@@ -45,4 +45,18 @@ export const revealReverse = {
       },
     },
   },
+};
+
+// Export other presets if needed
+export const springMedium = {
+  type: "spring",
+  stiffness: 300,
+  damping: 30,
+};
+
+// Default export (optional)
+export default {
+  reveal,
+  revealReverse,
+  springMedium,
 };
