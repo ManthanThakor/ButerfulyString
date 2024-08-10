@@ -8,9 +8,11 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div style={{ padding: "20px", textAlign: "center" }}>
-      <h1>Animated Text with Butterfly Effect</h1>
-      <ButterflyString text="Hello, World!" />
+    <div className="App">
+      <div style={{ padding: "20px", textAlign: "center" }}>
+        <h1>Animated Text with Butterfly Effect</h1>
+        <ButterflyString text="Hello, World!" />
+      </div>
     </div>
   );
 }
